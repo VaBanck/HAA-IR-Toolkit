@@ -1,8 +1,9 @@
 # HAA_IR Toolkit
 Инструмент для декодирования пакетов HAA IR Captured
 
-Инструмент помогает вам декодировать захваченные ИК-пакеты HAA в 2-, 4- или 6-битный протокол HAA и команду протокола. URL: https://vabanck.github.io/haair/haair.html.
-https://github.com/RavenSystem/esp-homekit-devices#haa---home-accessory-architect
+Инструмент помогает вам декодировать захваченные ИК-пакеты HAA в 2-, 4- или 6-битный протокол HAA и команду протокола. 
+URL: https://vabanck.github.io/haair/haair.html
+URL:https://github.com/RavenSystem/esp-homekit-devices#haa---home-accessory-architect
 
 Например, если мы используем захват IR-пакетов HAA ниже (для Daikin AC), инструмент проанализирует пакеты и идентифицирует:
 
