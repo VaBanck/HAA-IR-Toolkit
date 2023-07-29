@@ -24,27 +24,26 @@
                         <table id="table1" width="100%">
                             <tr>
                                 <td>
-                                    <b>Paste your captured HAA IR Packets, including header and footer,
-                                        then click button "Decode HAA IR Protocol"</b>
-                                    <br/>Note: the code assumes (and ignores) a header pair (e.g. + 9050 - 4524 below) and a
-                                    footer single value (e.g. + 540 below). If your capture does not contain header/footer,
-                                    check the appropriate checkboxes.
-                                    <br/>Sample captured packets below are for an LG TV "MUTE" button (bAeBaFbAeBaD)
+                                    <b>Вставьте захваченные IR-пакеты HAA, включая верхний и нижний колонтитулы,
+                                        затем нажмите кнопку "Decode HAA IR Protocol"</b>
+                                    <br/>Примечание: код предполагает (и игнорирует) пару заголовков (например, + 9050 - 4524 ниже) и
+                                    одиночное значение нижнего колонтитула (например, + 540 ниже). Если ваш захват не содержит верхнего/нижнего колонтитула,
+                                    установите соответствующие флажки
+                                    <br/>Примеры перехваченных пакетов ниже относятся к кнопке «MUTE» телевизора LG (bAeBaFbAeBaD)
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <button class="button buttonBlue"
-                                            onclick="javascript:getIRProtocol_Standard_N_Bits(this);"> Decode HAA IR
-                                        Protocol
+                                            onclick="javascript:getIRProtocol_Standard_N_Bits(this);"> Декодировать HAA IR
                                     </button>
-                                    <button id="clearPackets" class="button buttonRed"> Clear Captured Packets</button>
-                                    <button id="clearAll" class="button buttonRed"> Clear All</button>
+                                    <button id="clearPackets" class="button buttonRed"> Очистка пакетов</button>
+                                    <button id="clearAll" class="button buttonRed"> Очистить</button>
                                     &nbsp;
                                     <input type="checkbox" id="noheader" value="noheader"
-                                           title="Check if your IR capture does not have a header pair"/>No Header
+                                           title="Check if your IR capture does not have a header pair"/>Нет заголовка
                                     <input type="checkbox" id="nofooter" value="nofooter"
-                                           title="Check if your IR capture does not have a footer"/>No Footer
+                                           title="Check if your IR capture does not have a footer"/>Нет нижнего колонтитула
                                     &nbsp;Max diff range:
                                     <input class="" type="text" id="maxDifStandard" size="6" value="100"
                                            title="IR packets are grouped based on this range. E.g. 449 and 397 below have a difference of 82, and will be grouped together if 100 range is entered"/>
@@ -63,7 +62,7 @@
                                     </select>
 
                                     <br/>
-                                    <b>IR Captured Packets</b>
+                                    <b>ИК-захваченные пакеты</b>
                                     <textarea id="inputIR" cols="150" rows="10">
     + 9050 - 4524 +  540 -  585 +  540 -  584 +  539 - 1709 +  540 -  585 +  539 -  585 +  539 -  585 +  539 -  586
     +  539 -  585 +  538 - 1710 +  539 - 1709 +  540 -  584 +  540 - 1709 +  540 - 1708 +  540 - 1709 +  539 - 1709
@@ -75,7 +74,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Protocol Bits</b> (averaged and rounded)
+                                    <b>Биты протокола</b> (averaged and rounded)
                                 </td>
                             </tr>
                             <tr>
@@ -83,7 +82,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Command Bits</b>
+                                    <b>Командные биты</b>
                                 </td>
                             </tr>
                             <tr>
@@ -93,10 +92,10 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <b>Protocol Command</b>
+                                            <b>Команда протокола</b>
                                         </td>
                                         <td>
-                                            <b>Protocol</b> (value between quotes)
+                                            <b>Протокол</b> (value between quotes)
                                         </td>
                                     </tr>
 
