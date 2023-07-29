@@ -44,7 +44,7 @@
                                            title="Check if your IR capture does not have a header pair"/>Нет заголовка
                                     <input type="checkbox" id="nofooter" value="nofooter"
                                            title="Check if your IR capture does not have a footer"/>Нет нижнего колонтитула
-                                    &nbsp;Максимальный диапазон различий:
+                                    &nbsp;Диапазон различий:
                                     <input class="" type="text" id="maxDifStandard" size="6" value="100"
                                            title="IR packets are grouped based on this range. E.g. 449 and 397 below have a difference of 82, and will be grouped together if 100 range is entered"/>
                                     Округлить биты до:
@@ -199,47 +199,47 @@
                         <table id="table1" width="100%">
                             <tr>
                                 <td>
-                                    <b>Paste your Hex Pronto code and click "Decode HAA IR Protocol"</b> - Tested on Samsung
-                                    IR Pronto codes
+                                    <b>Вставьте свой код Hex Pronto и нажмите "Декодировать ИК-протокол HAA"</b> - Проверено на самсунге
+                                    ИК-пронто-коды
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button id="decodePronto" class="button buttonBlue"> Decode HAA IR Protocol</button>
-                                    <button id="clearPacketsPronto" class="button buttonRed"> Clear Captured Packets
+                                    <button id="decodePronto" class="button buttonBlue"> Декодировать ИК-протокол HAA</button>
+                                    <button id="clearPacketsPronto" class="button buttonRed"> Очистить захваченные пакеты
                                     </button>
-                                    <button id="clearAllPronto" class="button buttonRed"> Clear All</button>
+                                    <button id="clearAllPronto" class="button buttonRed"> Очистить</button>
                                     # Header Pairs to Ignore: <input class="" type="text" id="numHeadersToIgnore" size="6"
                                                                      value="3"/>
                                     # Footer Pairs to Ignore: <input class="" type="text" id="numFootersToIgnore" size="6"
                                                                      value="1"/>
                                     <br/>
-                                    <b>IR Captured Packets</b>
+                                    <b>ИК-захваченные пакеты</b>
 
-                                    <textarea id="inputIRPronto" cols="150" rows="16">
+                                    <textarea id="inputIRPronto" cols="150" rows="10">
     0000 006D 0000 0022 00AC 00AC 0015 0040 0015 0040 0015 0040 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0040 0015 0040 0015 0040 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0015 0040 0015 0015 0015 0015 0015 0040 0015 0015 0015 0040 0015 0040 0015 0040 0015 0015 0015 0040 0015 0040 0015 0015 0015 0040 0015 0015 0015 0015 0015 0015 0015 0689
                               </textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Packets To Process</b>
+                                    <b>Пакеты для обработки</b>
                                 </td>
                             </tr>
                             <tr>
-                                <td><textarea id="preprocessOutputPronto" cols="150" rows="10"></textarea></td>
+                                <td><textarea id="preprocessOutputPronto" cols="150" rows="8"></textarea></td>
                             </tr>
 
                             <tr>
                                 <td>
-                                    <b>Result Bits</b>
+                                    <b>Биты результата</b>
                                 </td>
                             </tr>
                             <tr>
-                                <td><textarea id="resultBitsPronto" cols="150" rows="10"></textarea></td>
+                                <td><textarea id="resultBitsPronto" cols="150" rows="8"></textarea></td>
                             </tr>
                             <tr>
-                                <td><b>Result Protocol Command</b>
+                                <td><b>Результат команды протокола</b>
                                     &nbsp;&nbsp;
                                     <button id="clearRawPronto" class="button buttonRed"> Clear</button>
                                 </td>
